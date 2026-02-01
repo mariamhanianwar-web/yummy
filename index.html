@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy Clone</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Side Menu -->
+    <div id="sideMenu" class="side-nav">
+        <i id="closeBtn" class="fa-solid fa-xmark close-btn"></i>
+        <div class="links mt-4">
+            <a onclick="showSearch()">Search</a>
+            <a onclick="getCategories()">Categories</a>
+            <a onclick="getAreas()">Area</a>
+            <a onclick="getIngredients()">Ingredients</a>
+            <a onclick="showContact()">Contact Us</a>
+        </div>
+    </div>
+
+    <!-- Open Menu -->
+    <i id="openMenu" class="fa-solid fa-bars open-btn"></i>
+
+    <!-- Content -->
+    <div class="container mt-4">
+        <div id="content" class="row g-4"></div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
